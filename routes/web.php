@@ -21,3 +21,11 @@ Route::get('/', function () {
     $linkCards = config('db.linkCards');
     return view('home', compact('comics','footer','linkCards','header') );
 })->name('home');
+Route::get('/comic', function () {
+
+    $header = config('db.header');
+    $comics = config('db.comics');
+    $footer = config('db.footer');
+    $linkCards = config('db.linkCards');
+    return view('comic', compact('comics','footer','linkCards','header') );
+})->name('comic');

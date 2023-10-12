@@ -10,7 +10,7 @@ return [
           ],
           [
           'name'=>'comics',
-          'link'=>'#'
+          'link'=>'http://127.0.0.1:8000/comic'
           ],
           [
           'name'=>'movie',
