@@ -1,1 +1,147 @@
 @import "~bootstrap/scss/bootstrap";
+
+//! header
+.header-wrapper{
+
+    background-color: #ffffff;
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      max-height: 4rem;
+    }
+    nav{
+      display: flex;
+      ul{
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        li{
+          padding: 2.3rem 0 ;
+          display: flex;
+          align-items: center;
+          margin: 0 1rem;
+          &:hover{
+            box-shadow: inset 0px -15px 0px -10px #0c7cec;
+          }
+          a{
+            text-decoration: none;
+            color: #343434;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+
+//! map
+.map-wrapper {
+    background-image: url(../assets/img/footer-bg.jpg);
+    .container {
+        position: relative;
+        overflow: hidden;
+        .map-container {
+            color: #fffffe;
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            max-height: 400px;
+            .list {
+                text-transform: uppercase;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        text-transform: capitalize;
+                        color: #999999;
+                        margin-right: 1rem;
+                        font-size: 0.8rem;
+                        cursor: pointer;
+                        &:last-child {
+                            margin-bottom: 1rem;
+                        }
+                        &:hover {
+                            color: #fffffe;
+                        }
+                    }
+                }
+            }
+        }
+        img {
+            position: absolute;
+            right: 0px;
+            top: 0;
+            transform: translateY(-20%);
+        }
+    }
+}
+
+//! footer
+.footer-wrapper {
+    background-color: #303030;
+    .footer-container {
+        height: 99px;
+        h4 {
+            color: #0c7cec;
+        }
+        ul {
+            list-style: none;
+            li {
+                cursor: pointer;
+            }
+        }
+        .sign-up-btn {
+            border: #0c7cec 2px solid;
+            background-color: transparent;
+            color: #ffffff;
+            text-transform: uppercase;
+            padding: 0.25rem 0.5rem;
+        }
+    }
+}
+
+// ! cardbar
+.cardbar-wrapper{
+    background-color:#0c7cec ;
+    div{
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      .link-card{
+        width: calc((100% - 5rem) / 5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:nth-child(4) > div > img{
+          height: 35px;
+        }
+        .miniature{
+          width: 20%;
+          aspect-ratio: 1;
+          margin: 0 1rem 0 0 ;
+          
+          img{
+            width:100%;
+            max-height: 40px;
+            object-fit: contain;
+          }
+        }
+        span{
+          color:#fafcfd ;
+          text-transform: uppercase;
+          text-wrap: nowrap;
+          font-size: .8rem;
+        }
+      }
+    }
+  }
